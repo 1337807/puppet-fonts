@@ -6,7 +6,7 @@ define fonts::powerline::definitions::meslo {
   $prefix='Meslo'
   file { "${prefix}-${title}.ttf":
     ensure => 'present',
-    path   => "${fonts}/${prefix}-${title}.ttf",
-    source => "puppet:///modules/fonts/${location}/${prefix}-${title}.ttf"
+    path   => "${fonts}/${prefix}-${title}.otf",
+    source => "puppet:///modules/fonts/${location}/${prefix}-${title}.otf"
   }
 }
