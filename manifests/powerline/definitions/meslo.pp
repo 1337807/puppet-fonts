@@ -4,7 +4,7 @@ define fonts::powerline::definitions::meslo {
   $fonts="/Users/${::luser}/Library/Fonts"
   $location='powerline/meslo'
   $prefix='Meslo'
-  file { "${prefix}-${title}.ttf":
+  file { "${prefix}-${title}.otf":
     ensure => 'present',
     path   => "${fonts}/${prefix}-${title}.otf",
     source => "puppet:///modules/fonts/${location}/${prefix}-${title}.otf"
